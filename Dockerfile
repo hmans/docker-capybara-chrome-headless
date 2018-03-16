@@ -17,7 +17,7 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
   && rm -rf /var/lib/apt/lists/* /var/cache/apt/* \
   && google-chrome --version
 
-RUN  wget --no-check-certificate https://chromedriver.storage.googleapis.com/2.31/chromedriver_linux64.zip \
+RUN  wget --no-check-certificate https://chromedriver.storage.googleapis.com/2.36/chromedriver_linux64.zip \
   && unzip chromedriver_linux64.zip \
   && rm chromedriver_linux64.zip \
   && mv -f chromedriver /usr/local/share/ \
